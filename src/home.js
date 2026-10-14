@@ -11,16 +11,16 @@ app.innerHTML = `
           <div class="tagline">Predict it. Play it. Understand it.</div>
         </div>
       </div>
-      <div class="prototype-badge">PROTOTYPE 0.3</div>
+      <div class="prototype-badge">PROTOTYPE 0.5</div>
     </header>
 
     <section class="home-hero">
-      <div class="eyebrow">PLAYABLE PHYSICS</div>
+      <div class="eyebrow">PLAYABLE SCIENCE & GEOMETRY</div>
       <h1>Choose your challenge.</h1>
-      <p>Each problem is a physical system you can manipulate. Make a prediction, run the experiment, then use physics to improve it.</p>
+      <p>Each challenge is something you can manipulate directly. Predict, experiment, rearrange and use the underlying science or geometry to improve your solution.</p>
     </section>
 
-    <section class="challenge-grid" aria-label="Physics challenges">
+    <section class="challenge-grid" aria-label="Interactive challenges">
       <a class="challenge-card projectile-card" href="/hit-target.html">
         <div class="challenge-card-visual projectile-visual" aria-hidden="true">
           <div class="mini-cannon"></div>
@@ -78,11 +78,57 @@ app.innerHTML = `
           <div class="challenge-card-footer"><span>PLAY CHALLENGE</span><strong>→</strong></div>
         </div>
       </a>
+
+      <a class="challenge-card gas-card" href="/keep-gas.html">
+        <div class="challenge-card-visual gas-visual" aria-hidden="true">
+          <div class="mini-gas-cylinder"></div>
+          <div class="mini-gas-piston"></div>
+          <div class="mini-gas-dot gas-dot-a"></div>
+          <div class="mini-gas-dot gas-dot-b"></div>
+          <div class="mini-gas-dot gas-dot-c"></div>
+        </div>
+        <div class="challenge-card-body">
+          <div class="challenge-card-meta"><span>05</span><span>Ideal gas law</span></div>
+          <h2>Keep The Gas Alive</h2>
+          <p>Control volume and temperature to hit the target pressure without crossing the chamber's safety limits.</p>
+          <div class="challenge-card-footer"><span>PLAY CHALLENGE</span><strong>→</strong></div>
+        </div>
+      </a>
+
+      <a class="challenge-card coffee-card" href="/cool-coffee.html">
+        <div class="challenge-card-visual coffee-visual" aria-hidden="true">
+          <div class="mini-cup"></div>
+          <div class="mini-steam steam-a"></div>
+          <div class="mini-steam steam-b"></div>
+          <div class="mini-milk-drop"></div>
+        </div>
+        <div class="challenge-card-body">
+          <div class="challenge-card-meta"><span>06</span><span>Thermal transfer</span></div>
+          <h2>Cool The Coffee</h2>
+          <p>Choose when to add cold milk so the coffee reaches the perfect serving temperature exactly eight minutes later.</p>
+          <div class="challenge-card-footer"><span>PLAY CHALLENGE</span><strong>→</strong></div>
+        </div>
+      </a>
+
+
+      <a class="challenge-card tangram-home-card" href="/tangram.html">
+        <div class="challenge-card-visual tangram-visual" aria-hidden="true">
+          <div class="mini-tangram-square"></div>
+          <div class="mini-tangram-line line-a"></div>
+          <div class="mini-tangram-line line-b"></div>
+        </div>
+        <div class="challenge-card-body">
+          <div class="challenge-card-meta"><span>07</span><span>Spatial geometry</span></div>
+          <h2>Build The Shape</h2>
+          <p>Use all seven tangram pieces. Drag, rotate and reflect them until they exactly rebuild the target silhouette.</p>
+          <div class="challenge-card-footer"><span>PLAY CHALLENGE</span><strong>→</strong></div>
+        </div>
+      </a>
     </section>
 
     <section class="home-principle">
       <div class="section-label">THE RULE</div>
-      <p><strong>Physics is the game engine.</strong> The equations are not shown first: they become the tool you need to win.</p>
+      <p><strong>The concept is the game engine.</strong> Equations, geometry and spatial reasoning are not shown first: they become the tools you need to win.</p>
     </section>
   </main>
 `;

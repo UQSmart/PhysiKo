@@ -249,3 +249,81 @@ footer { text-align:center; color:#6f788d; font-size:11px; padding:28px 0 4px; }
   .orbit-live-strip div,.field-live-strip div { border-bottom:1px solid rgba(255,255,255,.06); }
   .orbit-scene-wrap,.field-scene-wrap { height:430px; }
 }
+
+/* Prototype 0.4 thermodynamics */
+.gas-visual { background: radial-gradient(circle at 50% 44%, rgba(142,165,255,.18), transparent 34%), #0b1221; }
+.mini-gas-cylinder { position:absolute; left:50%; bottom:42px; width:120px; height:185px; transform:translateX(-50%); border:3px solid rgba(210,220,255,.58); border-radius:20px 20px 14px 14px; background:linear-gradient(to top,rgba(127,140,255,.08),rgba(255,255,255,.02)); }
+.mini-gas-piston { position:absolute; left:50%; top:74px; width:132px; height:15px; transform:translateX(-50%); border-radius:7px; background:#aeb8d5; box-shadow:0 0 20px rgba(167,178,255,.18); }
+.mini-gas-piston::before { content:''; position:absolute; width:10px; height:48px; left:61px; bottom:12px; background:#7f8ba8; border-radius:6px; }
+.mini-gas-dot { position:absolute; width:13px; height:13px; border-radius:50%; background:#ff88b0; box-shadow:0 0 14px rgba(255,113,157,.38); }
+.gas-dot-a { left:44%; bottom:95px; }
+.gas-dot-b { left:55%; bottom:130px; background:#a7b2ff; }
+.gas-dot-c { left:48%; bottom:175px; background:#a7b2ff; }
+
+.coffee-visual { background: radial-gradient(circle at 50% 55%, rgba(255,154,96,.12), transparent 35%), #0d1220; }
+.mini-cup { position:absolute; left:50%; bottom:58px; width:126px; height:115px; transform:translateX(-50%); border:5px solid #eef1fb; border-top-width:8px; border-radius:8px 8px 34px 34px; background:linear-gradient(to top,#6d321d 0 62%,transparent 62%); }
+.mini-cup::after { content:''; position:absolute; right:-47px; top:19px; width:45px; height:55px; border:7px solid #eef1fb; border-left:0; border-radius:0 28px 28px 0; }
+.mini-steam { position:absolute; width:35px; height:75px; border-left:3px solid rgba(220,228,246,.42); border-radius:50%; }
+.steam-a { left:46%; top:55px; transform:rotate(8deg); }
+.steam-b { left:53%; top:43px; transform:rotate(-8deg); }
+.mini-milk-drop { position:absolute; left:31%; top:90px; width:20px; height:28px; background:#f7f3e8; border-radius:55% 45% 60% 40%; transform:rotate(30deg); }
+
+.thermal-chart-wrap { border-top:1px solid var(--border); background:#0b1221; padding:12px 14px 8px; }
+.thermal-chart-wrap canvas { width:100%; height:180px; display:block; border-radius:12px; }
+
+@media (max-width:680px) {
+  .thermal-chart-wrap canvas { height:150px; }
+}
+
+/* Tangram challenge */
+.logo-link,.home-link { text-decoration:none; }
+.tangram-layout { display:grid; grid-template-columns:minmax(0,1fr) 330px; gap:18px; }
+.tangram-card { min-width:0; }
+.tangram-stage-wrap { background:#0c1324; overflow:hidden; }
+.tangram-stage { width:100%; height:auto; display:block; touch-action:none; user-select:none; }
+.tangram-board-panel,.tangram-tray-panel { fill:rgba(255,255,255,.025); stroke:rgba(255,255,255,.07); }
+.svg-label { fill:#8792aa; font-size:12px; font-weight:800; letter-spacing:.16em; }
+.target-silhouette { fill:rgba(229,234,247,.14); stroke:rgba(255,255,255,.22); stroke-width:2; }
+.ghost-layer { opacity:0; transition:opacity .18s ease; pointer-events:none; }
+.ghost-layer.visible { opacity:1; }
+.tangram-ghost-piece { fill:rgba(255,255,255,.035); stroke:rgba(255,255,255,.4); stroke-width:2; stroke-dasharray:6 5; }
+.tangram-piece { cursor:grab; outline:none; transform-box:fill-box; transform-origin:center; }
+.tangram-piece:active { cursor:grabbing; }
+.tangram-piece polygon { stroke:rgba(255,255,255,.35); stroke-width:2; transition:stroke .15s ease, opacity .15s ease; }
+.tangram-piece.selected polygon { stroke:#fff; stroke-width:4; }
+.tangram-piece.locked { cursor:default; }
+.tangram-piece.locked polygon { stroke:rgba(104,224,173,.85); stroke-width:3; filter:none; }
+.tangram-instructions { display:flex; flex-wrap:wrap; gap:12px 22px; padding:14px 18px 17px; border-top:1px solid var(--border); color:var(--muted); font-size:11px; }
+.tangram-instructions strong { color:#d8def0; }
+.tangram-controls { min-width:0; }
+.selected-piece-name { margin-top:10px; font-size:24px; font-weight:850; letter-spacing:-.03em; }
+.selected-piece-copy { min-height:38px; margin-top:6px; color:var(--muted); font-size:12px; line-height:1.5; }
+.tangram-action-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:18px; }
+.tangram-action-grid .secondary-btn { width:100%; }
+.tangram-flip-btn { grid-column:1 / -1; }
+.tangram-progress-box { margin-top:18px; }
+.tangram-progress-main { display:flex; align-items:baseline; gap:6px; margin-top:5px; }
+.tangram-progress-main strong { font-size:34px; }
+.tangram-progress-main span { color:var(--muted); font-size:12px; }
+.tangram-progress-track { height:7px; margin-top:10px; background:rgba(255,255,255,.07); border-radius:999px; overflow:hidden; }
+.tangram-progress-track i { display:block; width:0; height:100%; border-radius:inherit; background:linear-gradient(90deg,#6d79ed,#72dfb2); transition:width .25s ease; }
+.tangram-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:12px; }
+.tangram-stats div { padding:11px 9px; border:1px solid rgba(255,255,255,.07); background:rgba(255,255,255,.025); border-radius:13px; }
+.tangram-stats span { display:block; color:var(--muted); font-size:9px; margin-bottom:5px; text-transform:uppercase; letter-spacing:.09em; }
+.tangram-stats strong { font-size:13px; }
+
+/* Tangram home card */
+.tangram-visual { position:relative; }
+.mini-tangram-square { position:absolute; width:122px; height:122px; left:50%; top:50%; transform:translate(-50%,-50%) rotate(45deg); border:2px solid rgba(255,255,255,.17); background:linear-gradient(135deg,rgba(120,136,255,.72) 0 49%,transparent 50%),linear-gradient(45deg,rgba(85,199,193,.62) 0 49%,rgba(255,159,90,.55) 50%); box-shadow:0 18px 45px rgba(0,0,0,.2); }
+.mini-tangram-line { position:absolute; height:2px; width:160px; left:50%; top:50%; background:rgba(255,255,255,.28); transform-origin:center; }
+.mini-tangram-line.line-a { transform:translate(-50%,-50%) rotate(0deg); }
+.mini-tangram-line.line-b { transform:translate(-50%,-50%) rotate(90deg); }
+
+@media (max-width: 980px) {
+  .tangram-layout { grid-template-columns:1fr; }
+}
+@media (max-width: 680px) {
+  .tangram-stage { min-width:680px; }
+  .tangram-stage-wrap { overflow-x:auto; }
+  .tangram-instructions { padding-bottom:14px; }
+}
