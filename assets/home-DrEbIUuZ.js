@@ -1,4 +1,4 @@
-import"./style-DgUJRaTf.js";var e=document.querySelector(`#app`);e.innerHTML=`
+import"./style-C1ra3R5z.js";const a=document.querySelector("#app");a.innerHTML=`
   <main class="shell home-shell">
     <header class="topbar home-topbar">
       <div class="brand-wrap">
@@ -18,7 +18,7 @@ import"./style-DgUJRaTf.js";var e=document.querySelector(`#app`);e.innerHTML=`
     </section>
 
     <section class="challenge-grid" aria-label="Interactive challenges">
-      <a class="challenge-card projectile-card" href="/hit-target.html">
+      <a class="challenge-card projectile-card" href="./hit-target.html">
         <div class="challenge-card-visual projectile-visual" aria-hidden="true">
           <div class="mini-cannon"></div>
           <div class="mini-arc"></div>
@@ -32,7 +32,7 @@ import"./style-DgUJRaTf.js";var e=document.querySelector(`#app`);e.innerHTML=`
         </div>
       </a>
 
-      <a class="challenge-card loop-card" href="/complete-loop.html">
+      <a class="challenge-card loop-card" href="./complete-loop.html">
         <div class="challenge-card-visual loop-visual" aria-hidden="true">
           <div class="mini-ramp"></div>
           <div class="mini-loop"></div>
@@ -46,7 +46,7 @@ import"./style-DgUJRaTf.js";var e=document.querySelector(`#app`);e.innerHTML=`
         </div>
       </a>
 
-      <a class="challenge-card orbit-card" href="/put-orbit.html">
+      <a class="challenge-card orbit-card" href="./put-orbit.html">
         <div class="challenge-card-visual orbit-visual" aria-hidden="true">
           <div class="mini-earth"></div>
           <div class="mini-orbit-ring"></div>
@@ -60,7 +60,7 @@ import"./style-DgUJRaTf.js";var e=document.querySelector(`#app`);e.innerHTML=`
         </div>
       </a>
 
-      <a class="challenge-card field-card" href="/zero-field.html">
+      <a class="challenge-card field-card" href="./zero-field.html">
         <div class="challenge-card-visual field-visual" aria-hidden="true">
           <div class="mini-charge charge-a">+</div>
           <div class="mini-probe">P</div>
@@ -76,7 +76,7 @@ import"./style-DgUJRaTf.js";var e=document.querySelector(`#app`);e.innerHTML=`
         </div>
       </a>
 
-      <a class="challenge-card gas-card" href="/keep-gas.html">
+      <a class="challenge-card gas-card" href="./keep-gas.html">
         <div class="challenge-card-visual gas-visual" aria-hidden="true">
           <div class="mini-gas-cylinder"></div>
           <div class="mini-gas-piston"></div>
@@ -92,7 +92,7 @@ import"./style-DgUJRaTf.js";var e=document.querySelector(`#app`);e.innerHTML=`
         </div>
       </a>
 
-      <a class="challenge-card coffee-card" href="/cool-coffee.html">
+      <a class="challenge-card coffee-card" href="./cool-coffee.html">
         <div class="challenge-card-visual coffee-visual" aria-hidden="true">
           <div class="mini-cup"></div>
           <div class="mini-steam steam-a"></div>
@@ -108,7 +108,7 @@ import"./style-DgUJRaTf.js";var e=document.querySelector(`#app`);e.innerHTML=`
       </a>
 
 
-      <a class="challenge-card tangram-home-card" href="/tangram.html">
+      <a class="challenge-card tangram-home-card" href="./tangram.html">
         <div class="challenge-card-visual tangram-visual" aria-hidden="true">
           <div class="mini-tangram-square"></div>
           <div class="mini-tangram-line line-a"></div>
