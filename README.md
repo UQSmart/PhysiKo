@@ -1,41 +1,32 @@
-# Physics Play — Prototype 0.1
+# Physics Play — Prototype 0.3
 
-A static, no-backend prototype of the **Hit The Target** playable physics challenge.
+Static multi-page Vite prototype with four interactive physics challenges.
 
-## Features
+## Challenges
 
-- Projectile-motion simulation rendered with HTML Canvas
-- Launch angle and initial velocity controls
-- No preview trajectory before firing
-- Animated projectile flight
-- Hit/miss classification
-- Previous-attempt trajectories
-- Progressive hints
-- Physics score after solving
-- Local browser storage only
-- Responsive layout
-- No backend, database, login, analytics, or external runtime dependency
+1. **Hit The Target** — 3D projectile motion. Rotate the cannon, choose elevation and launch speed, zoom/orbit the scene, and hit the target.
+2. **Complete The Loop** — energy + circular motion. Choose the cart's starting height and discover the minimum height needed to remain on the loop.
+3. **Put It in Orbit** — gravitation. Launch a satellite from 400 km above Earth and choose speed/direction to create a full stable orbit.
+4. **Zero The Field** — electrostatics. Move a charge until the two electric-field contributions cancel at a probe point.
 
-## Requirements
+## Stack
 
-- Node.js 20+ recommended
-- npm
-- VS Code (optional, but recommended)
+- Vite
+- Vanilla JavaScript
+- Three.js / WebGL
+- OrbitControls
+- HTML/CSS
+- No backend
+- No database
 
-## Run locally
+## Run in VS Code
 
 ```bash
 npm install
 npm run dev
 ```
 
-Vite will print a local URL, normally:
-
-```text
-http://localhost:5173
-```
-
-Open it in the browser.
+Open the local URL displayed by Vite, normally `http://localhost:5173/`.
 
 ## Production build
 
@@ -43,106 +34,54 @@ Open it in the browser.
 npm run build
 ```
 
-The static production site will be generated in:
+Vite generates the static site in `dist/`.
+
+## Cloudflare Pages
+
+- Framework preset: **Vite**
+- Build command: `npm run build`
+- Build output directory: `dist`
+
+No environment variables or backend are required.
+
+## Physics notes
+
+### Hit The Target
+
+3D projectile equations with horizontal azimuth `φ` and elevation `θ`:
 
 ```text
-dist/
+x(t) = v₀ cos(θ) cos(φ) t
+z(t) = v₀ cos(θ) sin(φ) t
+y(t) = v₀ sin(θ) t − ½gt²
 ```
 
-You can test the production build locally with:
+### Complete The Loop
 
-```bash
-npm run preview
-```
-
-## Deploy on Cloudflare Pages
-
-### GitHub workflow
-
-1. Create a GitHub repository.
-2. Upload/push this whole project.
-3. In Cloudflare Dashboard open **Workers & Pages**.
-4. Create a new **Pages** project and connect the GitHub repository.
-5. Use these build settings:
+Uses conservation of energy and the contact condition at the top of the loop. The theoretical minimum release height is:
 
 ```text
-Framework preset: Vite
-Build command: npm run build
-Build output directory: dist
+h_min = 2.5 R
 ```
 
-6. Deploy.
+### Put It in Orbit
 
-No environment variables are required.
-
-### Direct Upload
-
-You can also run:
-
-```bash
-npm install
-npm run build
-```
-
-and upload the generated `dist` directory to Cloudflare Pages using Direct Upload.
-
-## Main source files
+Uses a central Newtonian two-body gravity model with Earth values:
 
 ```text
-physics-play-prototype-0.1/
-├─ index.html
-├─ package.json
-├─ README.md
-└─ src/
-   ├─ main.js
-   └─ style.css
+a = −μ r / |r|³
+v_circular = √(μ/r)
 ```
 
-### `src/main.js`
+The trajectory is numerically integrated in the orbital plane and classified as crash, orbit, or escape.
 
-Contains:
+### Zero The Field
 
-- game state
-- projectile physics
-- trajectory generation
-- Canvas rendering
-- controls
-- shot animation
-- hit detection
-- hints
-- scoring
-
-Core equations:
+Uses Coulomb's law and superposition:
 
 ```text
-x(t) = v cos(theta) t
-y(t) = v sin(theta) t - 1/2 g t^2
+E = k |Q| / r²
+E_net = E₁ + E₂
 ```
 
-### `src/style.css`
-
-Contains the full responsive UI and visual design.
-
-## Physics constants used in Prototype 0.1
-
-```text
-Gravity = 9.81 m/s²
-Target distance = 40 m
-Target height = 8 m
-Hit tolerance = 1.25 m
-```
-
-These are constants at the top of `src/main.js` and can be changed easily.
-
-## Next logical iteration — Prototype 0.2
-
-Suggested additions:
-
-- Over The Wall challenge
-- Several predefined levels
-- Daily Challenge generated from a deterministic date seed
-- shareable result card
-- encoded challenge parameters in the URL
-- high/low trajectory alternate-solution detection
-
-All of those can still work without a backend.
+The fixed charge is +4 μC at `x = −4 m`, the probe is at `x = 0`, and the movable charge is +1 μC. The exact zero-field position is `x = +2 m`.
