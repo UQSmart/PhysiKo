@@ -1,4 +1,4 @@
-import"./style-DgUJRaTf.js";import{C as e,I as t,M as n,N as r,P as i,T as a,b as o,c as s,d as c,g as l,h as u,j as ee,n as te,p as ne,t as re,u as d,x as ie}from"./OrbitControls-C2p2WYaR.js";var f=90,p=22,ae=5,oe=250,se=50,m=8,h=60.5,g=.2,_={addMilkAt:3,attempts:[],hintsUsed:0,currentHint:0,solved:!1,running:!1},ce=document.querySelector(`#app`);ce.innerHTML=`
+import"./style-DgUJRaTf.js";import{C as e,I as t,M as n,N as r,P as i,T as a,b as o,c as s,d as c,g as l,h as u,j as ee,n as te,p as ne,t as re,u as d,x as ie}from"./OrbitControls-Cvsnw4M8.js";var f=90,p=22,ae=5,oe=250,se=50,m=8,h=60.5,g=.2,_={addMilkAt:3,attempts:[],hintsUsed:0,currentHint:0,solved:!1,running:!1},ce=document.querySelector(`#app`);ce.innerHTML=`
   <main class="shell">
     <header class="topbar">
       <a class="back-link" href="/">← Challenges</a>

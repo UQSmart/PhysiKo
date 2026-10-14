@@ -1,4 +1,4 @@
-import"./style-DgUJRaTf.js";import{C as e,E as t,F as n,I as r,M as i,N as a,P as o,T as s,a as c,b as l,c as u,d as ee,g as te,h as ne,j as re,l as ie,m as ae,n as oe,p as se,t as ce,u as le,x as ue}from"./OrbitControls-C2p2WYaR.js";var d=9.81,f=5,p=9,m=f,h=500,de=2.5*f,g={height:10,attempts:[],isAnimating:!1,hintsUsed:0,currentHint:0,completed:!1},fe=document.querySelector(`#app`);fe.innerHTML=`
+import"./style-DgUJRaTf.js";import{C as e,E as t,F as n,I as r,M as i,N as a,P as o,T as s,a as c,b as l,c as u,d as ee,g as te,h as ne,j as re,l as ie,m as ae,n as oe,p as se,t as ce,u as le,x as ue}from"./OrbitControls-Cvsnw4M8.js";var d=9.81,f=5,p=9,m=f,h=500,de=2.5*f,g={height:10,attempts:[],isAnimating:!1,hintsUsed:0,currentHint:0,completed:!1},fe=document.querySelector(`#app`);fe.innerHTML=`
   <main class="shell">
     <header class="topbar">
       <a class="back-link" href="/">← Challenges</a>

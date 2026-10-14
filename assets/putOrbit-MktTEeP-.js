@@ -1,4 +1,4 @@
-import"./style-DgUJRaTf.js";import{C as e,I as t,M as n,N as r,O as i,T as a,_ as o,a as s,b as c,c as l,d as u,f as d,h as f,i as p,j as m,k as h,n as ee,o as g,r as te,t as ne,v as re,x as ie}from"./OrbitControls-C2p2WYaR.js";var ae=398600.4418,_=6371,oe=400,v=6771,se=Math.sqrt(ae/v),y={speed:7.2,flightAngle:0,running:!1,attempts:[],hints:0,solved:!1},ce=document.querySelector(`#app`);ce.innerHTML=`
+import"./style-DgUJRaTf.js";import{C as e,I as t,M as n,N as r,O as i,T as a,_ as o,a as s,b as c,c as l,d as u,f as d,h as f,i as p,j as m,k as h,n as ee,o as g,r as te,t as ne,v as re,x as ie}from"./OrbitControls-Cvsnw4M8.js";var ae=398600.4418,_=6371,oe=400,v=6771,se=Math.sqrt(ae/v),y={speed:7.2,flightAngle:0,running:!1,attempts:[],hints:0,solved:!1},ce=document.querySelector(`#app`);ce.innerHTML=`
 <main class="shell">
   <header class="topbar">
     <div class="brand-wrap">

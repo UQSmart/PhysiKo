@@ -1,4 +1,4 @@
-import"./style-DgUJRaTf.js";import{C as e,E as t,I as n,M as r,N as i,P as a,T as o,_ as s,a as c,b as l,c as ee,d as te,g as ne,h as u,i as re,j as ie,m as ae,n as oe,o as se,p as ce,t as le,v as ue,x as d}from"./OrbitControls-C2p2WYaR.js";var de=8987551792.3,fe=4e-6,pe=1e-6,f=-4,p=0,me=70,m={q2x:5,attempts:[],hints:0,solved:!1,measured:!1},he=document.querySelector(`#app`);he.innerHTML=`
+import"./style-DgUJRaTf.js";import{C as e,E as t,I as n,M as r,N as i,P as a,T as o,_ as s,a as c,b as l,c as ee,d as te,g as ne,h as u,i as re,j as ie,m as ae,n as oe,o as se,p as ce,t as le,v as ue,x as d}from"./OrbitControls-Cvsnw4M8.js";var de=8987551792.3,fe=4e-6,pe=1e-6,f=-4,p=0,me=70,m={q2x:5,attempts:[],hints:0,solved:!1,measured:!1},he=document.querySelector(`#app`);he.innerHTML=`
 <main class="shell">
   <header class="topbar">
     <div class="brand-wrap"><div class="logo-mark">Φ</div><div><div class="brand">PHYSICS PLAY</div><div class="tagline">Predict it. Play it. Understand it.</div></div></div>
