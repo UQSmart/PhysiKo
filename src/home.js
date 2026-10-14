@@ -21,7 +21,7 @@ app.innerHTML = `
     </section>
 
     <section class="challenge-grid" aria-label="Interactive challenges">
-      <a class="challenge-card projectile-card" href="/hit-target.html">
+      <a class="challenge-card projectile-card" href="./hit-target.html">
         <div class="challenge-card-visual projectile-visual" aria-hidden="true">
           <div class="mini-cannon"></div>
           <div class="mini-arc"></div>
@@ -35,7 +35,7 @@ app.innerHTML = `
         </div>
       </a>
 
-      <a class="challenge-card loop-card" href="/complete-loop.html">
+      <a class="challenge-card loop-card" href="./complete-loop.html">
         <div class="challenge-card-visual loop-visual" aria-hidden="true">
           <div class="mini-ramp"></div>
           <div class="mini-loop"></div>
@@ -49,7 +49,7 @@ app.innerHTML = `
         </div>
       </a>
 
-      <a class="challenge-card orbit-card" href="/put-orbit.html">
+      <a class="challenge-card orbit-card" href="./put-orbit.html">
         <div class="challenge-card-visual orbit-visual" aria-hidden="true">
           <div class="mini-earth"></div>
           <div class="mini-orbit-ring"></div>
@@ -63,7 +63,7 @@ app.innerHTML = `
         </div>
       </a>
 
-      <a class="challenge-card field-card" href="/zero-field.html">
+      <a class="challenge-card field-card" href="./zero-field.html">
         <div class="challenge-card-visual field-visual" aria-hidden="true">
           <div class="mini-charge charge-a">+</div>
           <div class="mini-probe">P</div>
@@ -79,7 +79,7 @@ app.innerHTML = `
         </div>
       </a>
 
-      <a class="challenge-card gas-card" href="/keep-gas.html">
+      <a class="challenge-card gas-card" href="./keep-gas.html">
         <div class="challenge-card-visual gas-visual" aria-hidden="true">
           <div class="mini-gas-cylinder"></div>
           <div class="mini-gas-piston"></div>
@@ -95,7 +95,7 @@ app.innerHTML = `
         </div>
       </a>
 
-      <a class="challenge-card coffee-card" href="/cool-coffee.html">
+      <a class="challenge-card coffee-card" href="./cool-coffee.html">
         <div class="challenge-card-visual coffee-visual" aria-hidden="true">
           <div class="mini-cup"></div>
           <div class="mini-steam steam-a"></div>
@@ -111,7 +111,7 @@ app.innerHTML = `
       </a>
 
 
-      <a class="challenge-card tangram-home-card" href="/tangram.html">
+      <a class="challenge-card tangram-home-card" href="./tangram.html">
         <div class="challenge-card-visual tangram-visual" aria-hidden="true">
           <div class="mini-tangram-square"></div>
           <div class="mini-tangram-line line-a"></div>

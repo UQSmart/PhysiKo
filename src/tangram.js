@@ -6,13 +6,13 @@ app.innerHTML = `
   <main class="shell">
     <header class="topbar">
       <div class="brand-wrap">
-        <a class="logo-mark logo-link" href="/" aria-label="Back to challenges">Φ</a>
+        <a class="logo-mark logo-link" href="./index.html" aria-label="Back to challenges">Φ</a>
         <div>
           <div class="brand">PHYSICS PLAY</div>
           <div class="tagline">Predict it. Play it. Understand it.</div>
         </div>
       </div>
-      <a class="prototype-badge home-link" href="/">← ALL CHALLENGES</a>
+      <a class="prototype-badge home-link" href="./index.html">← ALL CHALLENGES</a>
     </header>
 
     <section class="hero tangram-hero">

@@ -16,7 +16,7 @@ app.innerHTML = `
 <main class="shell">
   <header class="topbar">
     <div class="brand-wrap"><div class="logo-mark">Φ</div><div><div class="brand">PHYSICS PLAY</div><div class="tagline">Predict it. Play it. Understand it.</div></div></div>
-    <a class="back-link" href="/">← All challenges</a>
+    <a class="back-link" href="./index.html">← All challenges</a>
     <div class="prototype-badge">CHALLENGE 04</div>
   </header>
 

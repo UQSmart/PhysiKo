@@ -68,3 +68,8 @@ dist/
 - Build output directory: `dist`
 
 No environment variables or backend services are required.
+
+
+## GitHub Pages
+
+This version uses relative links and `base: './'` so it can be hosted under a repository path such as `https://username.github.io/repository-name/`.

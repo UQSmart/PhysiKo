@@ -25,7 +25,7 @@ const app = document.querySelector('#app');
 app.innerHTML = `
   <main class="shell">
     <header class="topbar">
-      <a class="back-link" href="/">← Challenges</a>
+      <a class="back-link" href="./index.html">← Challenges</a>
       <div class="brand-wrap">
         <div class="logo-mark">Φ</div>
         <div>
