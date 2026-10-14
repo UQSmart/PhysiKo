@@ -1,19 +1,16 @@
 import { defineConfig } from 'vite';
+import { readdirSync } from 'node:fs';
 import { resolve } from 'path';
+
+const root = import.meta.dirname;
+const pages = readdirSync(root, { withFileTypes: true })
+  .filter((entry) => entry.isFile() && entry.name.endsWith('.html'))
+  .map((entry) => resolve(root, entry.name));
 
 export default defineConfig({
   build: {
     rollupOptions: {
-      input: {
-        home: resolve(__dirname, 'index.html'),
-        hitTarget: resolve(__dirname, 'hit-target.html'),
-        completeLoop: resolve(__dirname, 'complete-loop.html'),
-        putOrbit: resolve(__dirname, 'put-orbit.html'),
-        zeroField: resolve(__dirname, 'zero-field.html'),
-        keepGas: resolve(__dirname, 'keep-gas.html'),
-        coolCoffee: resolve(__dirname, 'cool-coffee.html'),
-        tangram: resolve(__dirname, 'tangram.html'),
-      },
+      input: pages,
     },
   },
 });
